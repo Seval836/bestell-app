@@ -206,7 +206,7 @@ function LoginPage({ onLogin }) {
       onLogin(true);
       setError("");
     } else {
-      setError("Falsche Anmeldedaten. Verwenden Sie: Birds / Paul89");
+      setError("Falsche Anmeldedaten. Bitte überprüfen Sie Benutzername und Passwort.");
     }
   };
 
@@ -256,7 +256,7 @@ function LoginPage({ onLogin }) {
                 color: "white",
                 fontSize: 16
               }}
-              placeholder="Birds"
+              placeholder="Benutzername eingeben"
             />
           </div>
           
@@ -277,7 +277,7 @@ function LoginPage({ onLogin }) {
                 color: "white",
                 fontSize: 16
               }}
-              placeholder="Paul89"
+              placeholder="Passwort eingeben"
             />
           </div>
           
@@ -312,19 +312,6 @@ function LoginPage({ onLogin }) {
           </button>
         </form>
         
-        <div style={{
-          marginTop: 20,
-          padding: 15,
-          background: "rgba(70, 130, 180, 0.1)",
-          borderRadius: 5,
-          border: "1px solid #4682B4",
-          fontSize: 14,
-          textAlign: "center"
-        }}>
-          <strong>Demo-Anmeldedaten:</strong><br />
-          Benutzername: <code>Birds</code><br />
-          Passwort: <code>Paul89</code>
-        </div>
       </div>
     </div>
   );
